@@ -1,1 +1,1 @@
-# escuelita-wenance-proyecto
+# Escuelita Wenance Proyecto

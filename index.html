@@ -16,19 +16,19 @@
         <h1>Aprendiendo Git</h1>
     </header>
     <main>
-        <article>
+        <article id="inicial">
             <h2>Que es Git?</h2>
             <p>Git es un <strong>repositorio de codigo</strong>, que significa esto? <br> Es un sistema que registra los cambios realizados sobre un archivo a lo largo del tiempo. <br> Esto te permite revertir archivos o el proyecto entero a un estado anterior,<br>                comparar cambios a lo largo del tiempo y ver quien introdujo un error y cuando.</p>
             <p>Git modela tus datos como un conjunto de instantaneas.<br>Cada vez que confirmas un cambio o guardas el estado de tu proyecto en <em>Git</em>,<br>el basicamente hace una foto del aspecto de todos tus archivos en ese momento,<br>y guarda una
                 referencia a esa instantanea.</p>
         </article>
-        <article>
+        <article id: "segundo">
             <h2>Operaciones en local</h2>
             <p>Para navegar por la historia del proyecto, <em>Git</em> no necesita salir al servidor para obtener<br>la historia y mostrartela, simplemente la lee directamente de tu base de datos local.<br> Esto significa que ves la historia del proyecto
                 al instante y que puedes trabajar sin conexion.
             </p>
         </article>
-        <article>
+        <article id="tercero">
             <h2>Integridad</h2>
             <p>No puedes perder informacion durante la transmision o sufrir corrupcion de archivos<br> sin que <em>Git</em> lo detecte.<br> El mecanismo que usa <em>Git</em> para generar esta suma de comprobacion se trata de<br> una cadena de 40 caracteres
                 hexadecimales.
@@ -36,6 +36,32 @@
                 <strong>Git guarda todo, no por nombre de archivo, sino<br>
         por el valor <em>hash</em> de su contenido.</strong>
             </p>
+        </article>
+        <article id="cuarto">
+            <h2>Los 3 Estados</h2>
+            <p>
+                <em>Git</em> tiene tres estados principales en los que se pueden encontrar tus archivos:</p>
+            <ol>
+                <li><strong>Modified</strong> - <em>Modificado</em></li>
+                <li><strong>Staged</strong> - <em>Preparado</em></li>
+                <li><strong>Committed</strong> - <em>Confirmado</em></li>
+            </ol>
+            <br>
+            <strong>Modified</strong> significa que has modificado el archivo pero todavia no lo has<br> confirmado a tu base de datos.<br>
+            <br>
+            <strong>Staged</strong> significa que has marcado un archivo <em>modificado</em> en su version actual para que vaya en<br> proxima <em>confirmacion</em>.<br>
+            <br>
+            <strong>Commited</strong> significa que los datos estan almacenados de manera segura en tu base de datos local.
+            <br>
+            <h3>Esto nos lleva a las <em>tres secciones pricipales de un proyecto de <strong>Git</strong>:</em></h3>
+            <ol>
+                <li>Working directory</li>
+                <li>Staging area</li>
+                <li>Git directory</li>
+            </ol>
+
+
+
         </article>
     </main>
     <footer>

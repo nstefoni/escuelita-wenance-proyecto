@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
     <meta charset="utf-8" />
     <meta name="descripcion" content="Principios sobre Git">
     <meta name="Autor" content="Nicolas Stefoni">
@@ -12,22 +13,27 @@
 </head>
 
 <body>
+
     <header>
         <h1>Aprendiendo Git</h1>
     </header>
+
     <main>
+
         <article id="inicial">
             <h2>Que es Git?</h2>
             <p>Git es un <strong>repositorio de codigo</strong>, que significa esto? <br> Es un sistema que registra los cambios realizados sobre un archivo a lo largo del tiempo. <br> Esto te permite revertir archivos o el proyecto entero a un estado anterior,<br>                comparar cambios a lo largo del tiempo y ver quien introdujo un error y cuando.</p>
             <p>Git modela tus datos como un conjunto de instantaneas.<br>Cada vez que confirmas un cambio o guardas el estado de tu proyecto en <em>Git</em>,<br>el basicamente hace una foto del aspecto de todos tus archivos en ese momento,<br>y guarda una
                 referencia a esa instantanea.</p>
         </article>
+
         <article id: "segundo">
             <h2>Operaciones en local</h2>
             <p>Para navegar por la historia del proyecto, <em>Git</em> no necesita salir al servidor para obtener<br>la historia y mostrartela, simplemente la lee directamente de tu base de datos local.<br> Esto significa que ves la historia del proyecto
                 al instante y que puedes trabajar sin conexion.
             </p>
         </article>
+
         <article id="tercero">
             <h2>Integridad</h2>
             <p>No puedes perder informacion durante la transmision o sufrir corrupcion de archivos<br> sin que <em>Git</em> lo detecte.<br> El mecanismo que usa <em>Git</em> para generar esta suma de comprobacion se trata de<br> una cadena de 40 caracteres
@@ -37,6 +43,7 @@
         por el valor <em>hash</em> de su contenido.</strong>
             </p>
         </article>
+
         <article id="cuarto">
             <h2>Los 3 Estados</h2>
             <p>
@@ -68,7 +75,10 @@
                 <li>Confirmas los cambios, lo que toma los archivos tal y como estan<br> en el area de preparacion, y almacena esas instantaneas de manera permanente<br> en tu directorio de <em>Git</em></li>
             </ol>
         </article>
+
     </main>
+
+
     <aside>
         <h2>Comandos Basicos Git</h2>
         <dl>
@@ -123,7 +133,16 @@
             <dt>$ git remote remove origin</dt>
             <dd>&gt; elimina lo que acabamos de subir</dd>
         </dl>
+
     </aside>
+    <article id="video">
+        <h3>Tutorial Git</h3>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HiXLkL42tMU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <figcaption>Video con curso de Git inicial</figcaption>
+        </figure>
+    </article>
+
     <footer>
 
     </footer>

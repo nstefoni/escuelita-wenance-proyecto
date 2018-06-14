@@ -75,10 +75,19 @@ h3 {
 aside {
     border: 3px solid black;
     padding: 2%;
-    margin: 2%;
     width: 40%;
     float: right;
-    top: -100px;
+    top: -1800px;
+    right: 3%;
     position: relative;
     display: block;
+}
+
+#video {
+    border: 3px solid black;
+    float: right;
+    right: 3px;
+    position: relative;
+    padding: 2%;
+    width: 46%;
 }

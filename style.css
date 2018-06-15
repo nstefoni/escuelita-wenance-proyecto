@@ -16,6 +16,7 @@ header {
     height: 120px;
     background-color: rgba(36, 41, 46);
     margin: auto auto;
+    border: 1px solid black;
 }
 
 h1 {
@@ -27,18 +28,24 @@ h1 {
     text-shadow: 2px 1px 1px rgba(36, 174, 221)
 }
 
+#uno {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+}
+
 #inicial {
     border: 3px solid black;
     width: 40%;
     padding: 2%;
-    text-align: center;
     margin: 2%;
     font-size: 150%;
     text-align: left;
+    display: inline-block;
 }
 
 .title1 {
-    font-size: 220%;
+    font-size: 170%;
     padding: 2%;
     text-align: center;
 }
@@ -49,16 +56,24 @@ h1 {
 
 #segundo {
     border: 3px solid black;
+    width: 40%;
+    height: 40%;
     padding: 2%;
     margin: 2%;
-    width: 40%;
+    font-size: 150%;
+    text-align: left;
+    display: inline-block;
 }
 
 #tercero {
     border: 3px solid black;
+    width: 40%;
+    height: 40%;
     padding: 2%;
     margin: 2%;
-    width: 40%;
+    font-size: 150%;
+    text-align: left;
+    display: inline-block;
 }
 
 #cuarto {
@@ -76,18 +91,12 @@ aside {
     border: 3px solid black;
     padding: 2%;
     width: 40%;
-    float: right;
-    top: -1800px;
     right: 3%;
-    position: relative;
-    display: block;
 }
 
 #video {
     border: 3px solid black;
-    float: right;
     right: 3px;
-    position: relative;
     padding: 2%;
-    width: 46%;
+    width: 38%;
 }

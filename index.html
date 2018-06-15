@@ -47,106 +47,115 @@
                 </p>
             </article>
         </section>
-        <article id="cuarto">
-            <h2>Los 3 Estados</h2>
-            <p>
-                <em>Git</em> tiene tres estados principales en los que se pueden encontrar tus archivos:</p>
-            <ol>
 
-                <li><strong>Modified</strong> - <em>Modificado</em></li>
-                <p>&bull; Significa que has modificado el archivo pero todavia no lo has<br> confirmado a tu base de datos.</p>
-                <li><strong>Staged</strong> - <em>Preparado</em></li>
-                <p>&bull; Significa que has marcado un archivo <em>modificado</em> en su version actual para que vaya en<br> proxima <em>confirmacion</em></p>
-                <li><strong>Committed</strong> - <em>Confirmado</em></li>
-                <p>&bull; Significa que los datos estan almacenados de manera segura en tu base de datos local.</p>
-            </ol>
-            <br>
-            <h3>Esto nos lleva a las <em>tres secciones pricipales</em> de un proyecto de <strong>Git</strong>:</h3>
-            <ol>
-                <li>Working directory:</li>
-                <p>&bull; Es una copia de una version del proyecto.<br> Estos archivos se sacan de la base de datos comprimida en el directorio de <em>Git</em>,<br> y se colocan en el disco para que los puedas usar o modificar.</p>
-                <li>Staging area:</li>
-                <p>&bull; Es un sencillo archivo, generalmente contenido en tu <em>directorio de Git</em>,<br> que almacena informacion acerca de lo que va a ir en tu proxima confirmacion.</p>
-                <li>Git directory:</li>
-                <p>&bull; Es donde <em>Git</em> almacena los metadatos y la base de datos de objetos para tu proyecto.<br> Es la parte mas importante de <em>Git</em>, y es lo que se copia cuando clonas un repositorio desde otro<br> ordenador.
-                </p>
-            </ol>
-            <h3>El Flujo de trabajo basico en <em>Git</em> es algo asi:</h3>
-            <ol>
-                <li>Modificas una serie de archivos en tu directorio de trabajo.</li>
-                <li>Preparas los archivos, añadiendolos a tu area de preparacion.</li>
-                <li>Confirmas los cambios, lo que toma los archivos tal y como estan<br> en el area de preparacion, y almacena esas instantaneas de manera permanente<br> en tu directorio de <em>Git</em></li>
-            </ol>
-        </article>
+        <section id="dos">
+            <article id="cuarto">
+                <h2>Los 3 Estados</h2>
+                <p>
+                    <em>Git</em> tiene tres estados principales en los que se pueden encontrar tus archivos:</p>
+                <ol>
+
+                    <li><strong>Modified</strong> - <em>Modificado</em></li>
+                    <p>&bull; Significa que has modificado el archivo pero todavia no lo has<br> confirmado a tu base de datos.</p>
+                    <li><strong>Staged</strong> - <em>Preparado</em></li>
+                    <p>&bull; Significa que has marcado un archivo <em>modificado</em> en su version actual para que vaya en<br> proxima <em>confirmacion</em></p>
+                    <li><strong>Committed</strong> - <em>Confirmado</em></li>
+                    <p>&bull; Significa que los datos estan almacenados de manera segura en tu base de datos local.</p>
+                </ol>
+                <br>
+                <h3>Esto nos lleva a las <em>tres secciones pricipales</em> de un proyecto de <strong>Git</strong>:</h3>
+                <ol>
+                    <li>Working directory:</li>
+                    <p>&bull; Es una copia de una version del proyecto.<br> Estos archivos se sacan de la base de datos comprimida en el directorio de <em>Git</em>,<br> y se colocan en el disco para que los puedas usar o modificar.</p>
+                    <li>Staging area:</li>
+                    <p>&bull; Es un sencillo archivo, generalmente contenido en tu <em>directorio de Git</em>,<br> que almacena informacion acerca de lo que va a ir en tu proxima confirmacion.</p>
+                    <li>Git directory:</li>
+                    <p>&bull; Es donde <em>Git</em> almacena los metadatos y la base de datos de objetos para tu proyecto.<br> Es la parte mas importante de <em>Git</em>, y es lo que se copia cuando clonas un repositorio desde otro<br> ordenador.
+                    </p>
+                </ol>
+                <h3>El Flujo de trabajo basico en <em>Git</em> es algo asi:</h3>
+                <ol>
+                    <li>Modificas una serie de archivos en tu directorio de trabajo.</li>
+                    <li>Preparas los archivos, añadiendolos a tu area de preparacion.</li>
+                    <li>Confirmas los cambios, lo que toma los archivos tal y como estan<br> en el area de preparacion, y almacena esas instantaneas de manera permanente<br> en tu directorio de <em>Git</em></li>
+                </ol>
+            </article>
+
+
+
+
+
+
+            <aside>
+                <h2>Comandos Basicos Git</h2>
+                <dl>
+                    <dt>$ git init</dt>
+                    <dd>&gt; crear un proyecto nuevo.</dd>
+                    <dt>$ git add</dt>
+                    <dd>&gt; pasar los archivos del working al staging</dd>
+                    <dt>$ git commit -m"texto"</dt>
+                    <dd>&gt; pasar del staging al repository</dd>
+                    <dt>$ git status</dt>
+                    <dd>&gt; ver en que estado estan los archivos</dd>
+                    <dt>$ git log</dt>
+                    <dd>&gt; ver todos los commit que hemos creado</dd>
+                    <dt>$ git push</dt>
+                    <dd>&gt; subirlo a un repositorio remoto</dd>
+                    <dt>$ git pull</dt>
+                    <dd>&gt; trae los cambios que estan en el remoto</dd>
+                    <dt>$ git clone</dt>
+                    <dd>&gt; hace una copia del servidor al local</dd>
+                    <dt>$ ls</dt>
+                    <dd>&gt; listar directorios y archivos</dd>
+                    <dt>$ git config --list</dt>
+                    <dd>&gt; listar todas las propiedades que se configuraron en git</dd>
+                    <dt>$ git help</dt>
+                    <dd>&gt; acceder al manual</dd>
+                    <dt>$ pwd</dt>
+                    <dd>&gt; ver en que directorio estamos</dd>
+                    <dt>$ git checkout --"file"</dt>
+                    <dd>&gt; descartar los cambios</dd>
+                    <dt>$ git branch</dt>
+                    <dd>&gt; crear una rama nueva</dd>
+                    <dt>$ git checkout</dt>
+                    <dd>&gt; cambiar de rama</dd>
+                    <dt>$ git add .</dt>
+                    <dd>&gt; paso todos los archivos del staging al repository</dd>
+                    <dt>$ git remote add "ruta"</dt>
+                    <dd>&gt; seleccionamos el sitio de almacenamiento</dd>
+                    <dt>$ rm -rf "file"</dt>
+                    <dd>&gt; borrar el archivo</dd>
+                    <dt>$ mkdir "folder name"</dt>
+                    <dd>&gt; crea directorio</dd>
+                    <dt>$ touch "file name"</dt>
+                    <dd>&gt; crea un archivo</dd>
+                    <dt>$ git merge</dt>
+                    <dd>&gt; absorber una rama</dd>
+                    <dt>$ git branch -D"branch name</dt>
+                    <dd>&gt; elimino la rama</dd>
+                    <dt>$ git -b"branch name"</dt>
+                    <dd>&gt; creamos una rama y nos movemos a ella al mismo tiempo</dd>
+                    <dt>$ git remote -v</dt>
+                    <dd>&gt; ver lo que acabamos de copiar</dd>
+                    <dt>$ git remote remove origin</dt>
+                    <dd>&gt; elimina lo que acabamos de subir</dd>
+                </dl>
+
+            </aside>
+            <article id="video">
+                <h3>Tutorial Git</h3>
+                <figure>
+                    <iframe width="460" height="315" src="https://www.youtube.com/embed/HiXLkL42tMU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <figcaption>Video con curso de Git inicial</figcaption>
+                </figure>
+            </article>
+        </section>
 
     </main>
 
-
-    <aside>
-        <h2>Comandos Basicos Git</h2>
-        <dl>
-            <dt>$ git init</dt>
-            <dd>&gt; crear un proyecto nuevo.</dd>
-            <dt>$ git add</dt>
-            <dd>&gt; pasar los archivos del working al staging</dd>
-            <dt>$ git commit -m"texto"</dt>
-            <dd>&gt; pasar del staging al repository</dd>
-            <dt>$ git status</dt>
-            <dd>&gt; ver en que estado estan los archivos</dd>
-            <dt>$ git log</dt>
-            <dd>&gt; ver todos los commit que hemos creado</dd>
-            <dt>$ git push</dt>
-            <dd>&gt; subirlo a un repositorio remoto</dd>
-            <dt>$ git pull</dt>
-            <dd>&gt; trae los cambios que estan en el remoto</dd>
-            <dt>$ git clone</dt>
-            <dd>&gt; hace una copia del servidor al local</dd>
-            <dt>$ ls</dt>
-            <dd>&gt; listar directorios y archivos</dd>
-            <dt>$ git config --list</dt>
-            <dd>&gt; listar todas las propiedades que se configuraron en git</dd>
-            <dt>$ git help</dt>
-            <dd>&gt; acceder al manual</dd>
-            <dt>$ pwd</dt>
-            <dd>&gt; ver en que directorio estamos</dd>
-            <dt>$ git checkout --"file"</dt>
-            <dd>&gt; descartar los cambios</dd>
-            <dt>$ git branch</dt>
-            <dd>&gt; crear una rama nueva</dd>
-            <dt>$ git checkout</dt>
-            <dd>&gt; cambiar de rama</dd>
-            <dt>$ git add .</dt>
-            <dd>&gt; paso todos los archivos del staging al repository</dd>
-            <dt>$ git remote add "ruta"</dt>
-            <dd>&gt; seleccionamos el sitio de almacenamiento</dd>
-            <dt>$ rm -rf "file"</dt>
-            <dd>&gt; borrar el archivo</dd>
-            <dt>$ mkdir "folder name"</dt>
-            <dd>&gt; crea directorio</dd>
-            <dt>$ touch "file name"</dt>
-            <dd>&gt; crea un archivo</dd>
-            <dt>$ git merge</dt>
-            <dd>&gt; absorber una rama</dd>
-            <dt>$ git branch -D"branch name</dt>
-            <dd>&gt; elimino la rama</dd>
-            <dt>$ git -b"branch name"</dt>
-            <dd>&gt; creamos una rama y nos movemos a ella al mismo tiempo</dd>
-            <dt>$ git remote -v</dt>
-            <dd>&gt; ver lo que acabamos de copiar</dd>
-            <dt>$ git remote remove origin</dt>
-            <dd>&gt; elimina lo que acabamos de subir</dd>
-        </dl>
-
-    </aside>
-    <article id="video">
-        <h3>Tutorial Git</h3>
-        <figure>
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/HiXLkL42tMU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <figcaption>Video con curso de Git inicial</figcaption>
-        </figure>
-    </article>
-
     <footer>Proyecto Escuelita Wenance. Desing by Nicolas Stefoni</footer>
+
+
 </body>
 
 </html>
